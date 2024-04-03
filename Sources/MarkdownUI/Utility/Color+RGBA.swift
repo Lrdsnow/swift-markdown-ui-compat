@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, tvOS 15.0, *)
 extension Color {
   /// Creates a constant color from an RGBA value.
   /// - Parameter rgba: A 32-bit value that represents the red, green, blue, and alpha components of the color.

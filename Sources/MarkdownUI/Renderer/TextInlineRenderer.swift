@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, tvOS 15.0, *)
 extension Sequence where Element == InlineNode {
   func renderText(
     baseURL: URL?,
@@ -18,6 +19,7 @@ extension Sequence where Element == InlineNode {
   }
 }
 
+@available(iOS 15.0, tvOS 15.0, *)
 private struct TextInlineRenderer {
   var result = Text("")
 

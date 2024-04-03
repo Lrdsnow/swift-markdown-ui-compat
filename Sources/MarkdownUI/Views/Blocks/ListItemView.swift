@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, tvOS 15.0, *)
 struct ListItemView: View {
   @Environment(\.theme.listItem) private var listItem
   @Environment(\.listLevel) private var listLevel

@@ -21,6 +21,7 @@ import SwiftUI
 ///     FontSize(.em(2))
 ///   }
 /// ```
+@available(iOS 15.0, tvOS 15.0, *)
 public struct RelativeSize: Hashable {
   enum Unit: Hashable {
     case em
@@ -31,6 +32,7 @@ public struct RelativeSize: Hashable {
   var unit: Unit
 }
 
+@available(iOS 15.0, tvOS 15.0, *)
 extension RelativeSize {
   /// A size with a value of zero.
   public static let zero = RelativeSize(value: 0, unit: .rem)
@@ -57,6 +59,7 @@ extension RelativeSize {
   }
 }
 
+@available(iOS 15.0, tvOS 15.0, *)
 extension View {
   /// Positions this view within an invisible frame with the specified size.
   ///

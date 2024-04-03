@@ -12,6 +12,7 @@ public struct ListMarkerConfiguration {
   public let itemNumber: Int
 }
 
+@available(iOS 15.0, tvOS 15.0, *)
 extension BlockStyle where Configuration == ListMarkerConfiguration {
   /// A list marker style that uses decimal numbers beginning with 1.
   public static var decimal: Self {

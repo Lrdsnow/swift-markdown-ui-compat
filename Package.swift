@@ -6,9 +6,9 @@ let package = Package(
   name: "swift-markdown-ui",
   platforms: [
     .macOS(.v12),
-    .iOS(.v15),
-    .tvOS(.v15),
-    .macCatalyst(.v15),
+    .iOS(.v14),
+    .tvOS(.v14),
+    .macCatalyst(.v14),
     .watchOS(.v8),
   ],
   products: [

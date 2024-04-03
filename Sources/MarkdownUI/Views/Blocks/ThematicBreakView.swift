@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, tvOS 15.0, *)
 struct ThematicBreakView: View {
   @Environment(\.theme.thematicBreak) private var thematicBreak
 
