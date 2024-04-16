@@ -17,26 +17,14 @@ let package = Package(
       targets: ["MarkdownUI"]
     )
   ],
-  dependencies: [
-    .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "6.0.0"),
-    .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0"),
-  ],
+  dependencies: [],
   targets: [
     .target(name: "cmark-gfm"),
     .target(
       name: "MarkdownUI",
       dependencies: [
-        "cmark-gfm",
-        .product(name: "NetworkImage", package: "NetworkImage"),
+        "cmark-gfm"
       ]
-    ),
-    .testTarget(
-      name: "MarkdownUITests",
-      dependencies: [
-        "MarkdownUI",
-        .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
-      ],
-      exclude: ["__Snapshots__"]
     ),
   ]
 )

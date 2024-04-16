@@ -1,21 +1,10 @@
-import NetworkImage
 import SwiftUI
 
 /// The default image provider, which loads images from the network.
 @available(iOS 15.0, tvOS 15.0, *)
 public struct DefaultImageProvider: ImageProvider {
   public func makeImage(url: URL?) -> some View {
-    NetworkImage(url: url) { state in
-      switch state {
-      case .empty, .failure:
-        Color.clear
-          .frame(width: 0, height: 0)
-      case .success(let image, let idealSize):
-        ResizeToFit(idealSize: idealSize) {
-          image.resizable()
-        }
-      }
-    }
+      EmptyView() // removed bcuz uneeded
   }
 }
 
